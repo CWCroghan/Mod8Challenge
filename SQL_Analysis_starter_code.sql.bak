@@ -1,26 +1,8 @@
 -- Challenge Bonus queries.
 -- 1. (2.5 pts)
 -- Retrieve all the number of backer_counts in descending order for each `cf_id` for the "live" campaigns. 
-select count(backer_id)
-from backers
-group by cf_id
-order by cf_id desc;
 
 
-31
-45
-14
-27
-61
-211
-1111
-708
-808
-86
-66
-1089
-278
-3640
 
 -- 2. (2.5 pts)
 -- Using the "backers" table confirm the results in the first query.
