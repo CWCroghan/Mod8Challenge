@@ -34,20 +34,25 @@ from backers
 group by cf_id
 order by cf_id desc;
 
-3138	31
-2882	45
-2510	14
-2488	27
-2284	61
-1911	211
-1572	1111
-1114	708
-968	808
-948	86
-910	66
-563	1089
-238	278
-65	3640
+---------------------------
+-- |cf_id | backers_count | 
+---------------------------
+-- |3138	| 31            |
+-- |2882	| 45            |
+-- |2510	| 14            |
+-- |2488	| 27            |
+-- |2284	| 61            |
+-- |1911	| 211           |
+-- |1572	| 1111          |
+-- |1114	| 708           |
+-- |968	| 808           |
+-- |948	| 86            |
+-- |910	| 66            |
+-- |563	| 1089          |
+-- |238	| 278           |
+-- |65	| 3640          |
+--------------------------- 
+
 
 -- 3. (5 pts)
 -- Create a table that has the first and last name, and email address of each contact.
@@ -90,14 +95,17 @@ order by b.cf_id;
 -- sum(backers_count) = 8175
 -- number of records = 8175
 
-
-65	"Freeman"	" Gibbs"	"fgibbs@outlook.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
-65	"Loris"	" Goulet"	"lgoulet@yandex.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
-65	"Leigha"	" Wright"	"lwright@live.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
-65	"Uwe"	" Becker"	"ubecker@yahoo.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
-65	"Michel"	" Garner"	"mgarner@protonmail.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
-65	"Imen"	" Villeneuve"	"ivilleneuve@yahoo.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
-65	"Alcina"	" Bonadonna"	"abonadonna@yandex.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
-65	"Kati"	" Nash"	"knash@protonmail.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
-65	"Georg"	" Jager"	"gjager@yahoo.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
-65	"Timoteo"	" Dion"	"tdion@gmail.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------     
+--        | first_name   | last_name		|  email					|  company_name		| description							| end_date		| Left_of_Goal|
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------     
+-- 65	| "Freeman"	|  " Gibbs"		|  "fgibbs@outlook.com"		|  "Berry-Richardson"	|  "Automated zero tolerance implementation"	|  "2021-05-29"	|   8362.00  |
+-- 65	| "Loris"		|  " Goulet"		|  "lgoulet@yandex.com"		|  "Berry-Richardson"	|  "Automated zero tolerance implementation"	|  "2021-05-29"	|   8362.00  |
+-- 65	| "Leigha"	|  " Wright"		|  "lwright@live.com"		|  "Berry-Richardson"	|  "Automated zero tolerance implementation"	|  "2021-05-29"	|   8362.00  |
+-- 65	| "Uwe"		|  " Becker"		|  "ubecker@yahoo.com"		|  "Berry-Richardson"	|  "Automated zero tolerance implementation"	|  "2021-05-29"	|   8362.00  |
+-- 65	| "Michel"	|  " Garner"		|  "mgarner@protonmail.com"	|  "Berry-Richardson"	|  "Automated zero tolerance implementation"	|  "2021-05-29"	|   8362.00  |
+-- 65	| "Imen"		|  " Villeneuve"	|  "ivilleneuve@yahoo.com"	|  "Berry-Richardson"	|  "Automated zero tolerance implementation"	|  "2021-05-29"	|   8362.00  |
+-- 65	| "Alcina"	|  " Bonadonna"	|  "abonadonna@yandex.com"	|  "Berry-Richardson"	|  "Automated zero tolerance implementation"	|  "2021-05-29"	|   8362.00  |
+-- 65	| "Kati"		|  " Nash"		|  "knash@protonmail.com"	|  "Berry-Richardson"	|  "Automated zero tolerance implementation"	|  "2021-05-29"	|   8362.00  |
+-- 65	| "Georg"		|  " Jager"		|  "gjager@yahoo.com"		|  "Berry-Richardson"	|  "Automated zero tolerance implementation"	|  "2021-05-29"	|   8362.00  |
+-- 65	| "Timoteo"	|  " Dion"		|  "tdion@gmail.com"		|  "Berry-Richardson"	|  "Automated zero tolerance implementation"	|  "2021-05-29"	|   8362.00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

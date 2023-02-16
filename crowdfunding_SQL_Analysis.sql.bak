@@ -87,4 +87,17 @@ order by b.cf_id;
 
 -- Check the table
 
+-- sum(backers_count) = 8175
+-- number of records = 8175
 
+
+65	"Freeman"	" Gibbs"	"fgibbs@outlook.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
+65	"Loris"	" Goulet"	"lgoulet@yandex.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
+65	"Leigha"	" Wright"	"lwright@live.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
+65	"Uwe"	" Becker"	"ubecker@yahoo.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
+65	"Michel"	" Garner"	"mgarner@protonmail.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
+65	"Imen"	" Villeneuve"	"ivilleneuve@yahoo.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
+65	"Alcina"	" Bonadonna"	"abonadonna@yandex.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
+65	"Kati"	" Nash"	"knash@protonmail.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
+65	"Georg"	" Jager"	"gjager@yahoo.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
+65	"Timoteo"	" Dion"	"tdion@gmail.com"	"Berry-Richardson"	"Automated zero tolerance implementation"	"2021-05-29"	8362.00
