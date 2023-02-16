@@ -58,19 +58,36 @@ order by cf_id desc;
 -- Create a table that has the first and last name, and email address of each contact.
 -- and the amount left to reach the goal for all "live" projects in descending order. 
 
-select b.cf_id, b.first_name, b.last_name, b.email, (c.goal-c.pledged) as short
-from backers as b right join 
-	(select cf_id, goal, pledged, (goal-pledged) as short
+select n.contact_id, n.first_name, n.last_name, n.email, (c.goal-c.pledged) as Left_of_Goal 
+into email_contact_remaining_goal_amount   
+from contacts as n right join 
+	(select contact_id, goal, pledged
 		from campaign
 		where outcome = 'live') as c
-	on b.cf_id = c.cf_id
-order by b.cf_id;
+	on n.contact_id = c.contact_id
+order by c.goal-c.pledged desc;
+
 
 -- Check the table
 
--- sum(backers_count) = 8175
--- number of records = 8175
-
+------------------------------------------------------------------------------------------------------------------|         
+-- contact_id  | first_name    	| last_name		|  email								| Left_of_Goal|        
+------------------------------------------------------------------------------------------------------------------|         
+--    2467	|  "Calogero"		|  "Cross"		|  "calogero.cross@mercantini.it"			|  153288.00  |
+--    2809	|  "Lauretta"		|  "Neal"			|  "lauretta.neal@hotmail.de"				|  151747.00  |
+--    3290	|  "Chantal"		|  "Armas"		|  "chantal.armas@jenkins.net"			|  98164.00   |
+--    3280	|  "Ariadna"		|  "Geisel"		|  "ariadna.geisel@rangel.com"			|  88154.00   |
+--    6007	|  "Mathilde"		|  "Kruschwitz"	|  "mathilde.kruschwitz@yahoo.com"			|  72323.00   |
+--    4785	|  "Guillermina"	|  "Nicholson"		|  "guillermina.nicholson@grondin.fr"		|  71872.00   |
+--    2609	|  "Henry"		|  "Gucci"		|  "henry.gucci@leleu.fr"				|  41198.00   |
+--    1657	|  "Gabriela"		|  "Padilla"		|  "gabriela.padilla@pearson-russell.com"	|  40291.00   |
+--    1725	|  "Svenja"		|  "Perrin"		|  "svenja.perrin@berger.com"				|  8362.00    |
+--    1486	|  "Caroline"		|  "Reeves"		|  "caroline.reeves@yahoo.com"			|  3768.00    |
+--    5594	|  "Katarina"		|  "Clarke"		|  "katarina.clarke@hotmail.com.au"		|  3739.00    |
+--    4025	|  "Imelda"		|  "Guerin"		|  "imelda.guerin@stumpf.net"				|  1559.00    |
+--    3916	|  "Danny"		|  "Farrell"		|  "danny.farrell@hotmail.com"			|  1503.00    |
+--    5713	|  "Tobias"		|  "Carbajal"		|  "tobias.carbajal@live.com"				|  426.00     |
+------------------------------------------------------------------------------------------------------------------| 
 
 -- 4. (5 pts)
 -- Create a table, "email_backers_remaining_goal_amount" that contains the email address of each backer in descending order, 
